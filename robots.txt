@@ -1,0 +1,4 @@
+# robots.txt for https://onadan.vercel.app
+
+User-agent: *
+Allow: /
