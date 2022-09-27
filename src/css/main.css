@@ -74,21 +74,19 @@ body {
 }
 
 main {
-  min-height: 100vh;
-  padding: 4rem 0 0;
+  min-height: 90vh;
+  padding-top: 6rem;
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  position: relative;
 }
 
 @media (min-height: 768px) {
   main {
     min-height: 768px;
   }
-  .main-h1 {
-    font-size: 2rem;
-  }
 }
+
 .main-name {
   font-family: var(--font-mono);
   color: var(--light-green);
@@ -99,8 +97,8 @@ main {
 .main-h1 {
   padding: 0.5rem 0;
   color: var(--white);
-  font-size: 1.8rem;
   font-weight: var(--bold);
+  font-size: clamp(40px, 8vw, 80px);
 }
 
 .slate {
@@ -118,13 +116,13 @@ main {
   max-width: 30rem;
   color: var(--slate);
   padding: 0.7rem 0;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 main button {
   background-color: transparent;
   padding: 1rem 1.5rem;
-  margin: 2.5rem 0;
+  margin: 2rem 0 4rem;
   border: 1px solid var(--light-green);
   color: var(--light-green);
   font-size: 1rem;
@@ -132,10 +130,11 @@ main button {
 }
 
 main .scroll {
+  position: absolute;
+  bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   width: 100%;
   margin: 0 auto;
   color: var(--light-green);
@@ -148,33 +147,29 @@ main .scroll:hover {
 
 @keyframes upanddown {
   0% {
-    padding: 2rem;
+    transform: translate(0, -1rem);
   }
   50% {
-    padding: 1rem;
+    transform: translate(0, 0);
   }
   100% {
-    padding: 2rem;
+    transform: translate(0, -1rem);
   }
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   .main-h1 {
     font-size: 5vw;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .wrapper {
-    padding-left: 6rem;
+    padding-left: 8rem;
   }
 
-  main {
-    padding-left: rem;
-  }
-  section,
-  footer {
-    padding-left: rem;
+  .hidden {
+    display: none
   }
 }
 
@@ -186,6 +181,12 @@ footer {
 
 @media (max-width: 768px) {
   aside {
+    display: none;
+  }
+  main .scroll {
+    display: none;
+  }
+  .display {
     display: none;
   }
 }
@@ -244,6 +245,46 @@ aside.right::after {
   height: 90px;
   margin: 0px auto;
   background-color: var(--light-slate);
+}
+
+.about-me {
+  margin: 1rem 0;
+}
+
+.about-me header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 1rem 0;
+  width: 100%;
+  white-space: nowrap;
+  font-size: clamp(26px,5vw,32px);
+}
+
+.about-me header::after {
+  content: "";
+  display: block;
+  top: -5px;
+  height: 1px;
+  width: 50%;
+  padding: 0 12px;
+  background-color: var(--light-slate);
+}
+
+.about-me p {
+  max-width: 30rem;
+  color: var(--slate);
+  padding: 0.7rem 0;
+  line-height: 1.8rem;
+}
+
+.about-me span {
+    color: var(--light-green);
+}
+
+.my-picture {
+    display: none;
 }
 /* .p-name {
     font-family: var(--font-mono);
