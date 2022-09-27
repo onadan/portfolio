@@ -189,6 +189,9 @@ footer {
   .display {
     display: none;
   }
+  .about-me {
+  margin: 1rem 0;
+}
 }
 
 aside {
@@ -248,7 +251,7 @@ aside.right::after {
 }
 
 .about-me {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .about-me header {
@@ -256,7 +259,7 @@ aside.right::after {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
   width: 100%;
   white-space: nowrap;
   font-size: clamp(26px,5vw,32px);
@@ -267,7 +270,7 @@ aside.right::after {
   display: block;
   top: -5px;
   height: 1px;
-  width: 50%;
+  width: 100%;
   padding: 0 12px;
   background-color: var(--light-slate);
 }
