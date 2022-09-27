@@ -166,6 +166,7 @@ main .scroll:hover {
 @media (min-width: 768px) {
   .wrapper {
     padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .hidden {
@@ -276,7 +277,6 @@ aside.right::after {
 }
 
 .about-me p {
-  max-width: 30rem;
   color: var(--slate);
   padding: 0.7rem 0;
   line-height: 1.8rem;
