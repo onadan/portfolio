@@ -1,10 +1,10 @@
 if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker
-        .register("/serviceWorker.js")
-        .catch(err => console.log("Failure", err))
-    })
-  }
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .catch((err) => console.log("Failure", err));
+  });
+}
 
 const body = document.querySelector("body");
 
@@ -18,22 +18,22 @@ var lastScrollTop = 0;
 
 const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
-  var scrollTop = window.pageYOffset;
+// window.addEventListener("scroll", () => {
+//   var scrollTop = window.pageYOffset;
 
-  if (scrollTop >= navbar.offsetTop + 100) {
-    if (scrollTop > lastScrollTop) {
-      navbar.style.position = "fixed";
-      navbar.style.top = "-100px";
-    } else {
-      navbar.style.top = "0";
-      navbar.style.display = "relative";
-    }
-  } else {
-    navbar.style.top = "0";
-  }
-  lastScrollTop = scrollTop;
-});
+//   if (scrollTop >= navbar.offsetTop + 100) {
+//     if (scrollTop > lastScrollTop) {
+//       navbar.style.position = "fixed";
+//       navbar.style.top = "-100px";
+//     } else {
+//       navbar.style.top = "0";
+//       navbar.style.display = "relative";
+//     }
+//   } else {
+//     navbar.style.top = "0";
+//   }
+//   lastScrollTop = scrollTop;
+// });
 
 hamburger.addEventListener("click", () => {
   nav.classList.toggle("hide");
