@@ -34,7 +34,7 @@
 }
 
 html {
-scroll: smooth-behaviour;
+  scroll-behavior: smooth;
 }
 
 a {
