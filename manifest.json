@@ -1,0 +1,21 @@
+{
+  "short_name": "onadan",
+  "name": "Daniel Onaolapo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#9cffb0",
+  "background_color": "#020c1b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/assets/icons/cube192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/src/assets/icons/cube512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
