@@ -14,25 +14,39 @@
     <script src="/src/js/app.js" defer></script>
   </head>
 
-  <body>
+  <body id="over">
+    <div class="mobile-nav hide">
+      <ul class="mobile-nav-list">
+        <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
     <div class="navbar">
       <nav>
-        <div class="nav-brand">onadan</div>
+        <div class="nav-brand"><a href="/">onadan</a></div>
         <ul class="nav-list">
-          <li class="list-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              style="fill: var(--light-green)"
-            >
-              <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
-            </svg>
-          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: var(--light-green)"
+          >
+            <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+          </svg>
+
+        </div>
       </nav>
     </div>
+
+
 
     <aside class="left">
       <ul class="social-list">
@@ -51,7 +65,7 @@
     </aside>
 
     <aside class="right">
-      <p>onadan45@gmail.com</p>
+      <p><a href="mailto:onadan45@gmail.com">onadan45@gmail.com</a></p>
     </aside>
 
     <div class="wrapper">
@@ -64,39 +78,10 @@
         <h1 class="main-h1 display">Frontend Developer.</h1>
 
         <p class="main-intro">
-          I'm passionate about turning ideas into reality and bringing it to
-          life on the web and also making user experience very smooth.
+          I'm passionate about turning ideas into reality, bringing it to
+          life and making user experience on the web smooth.
         </p>
         <button class="main-btn">Resume</button>
-
-        <a href="#about"
-          ><div class="scroll">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              style="fill: var(--light-green)"
-            >
-              <path
-                d="M11.975 22H12c3.859 0 7-3.14 7-7V9c0-3.841-3.127-6.974-6.981-7h-.06C8.119 2.022 5 5.157 5 9v6c0 3.86 3.129 7 6.975 7zM7 9a5.007 5.007 0 0 1 4.985-5C14.75 4.006 17 6.249 17 9v6c0 2.757-2.243 5-5 5h-.025C9.186 20 7 17.804 7 15V9z"
-              ></path>
-              <path d="M11 6h2v6h-2z"></path>
-            </svg>
-            <pre> Scroll down </pre>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              style="fill: var(--light-green)"
-            >
-              <path
-                d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z"
-              ></path>
-            </svg>
-          </div>
-        </a>
       </main>
 
       <section class="about-me" id="about">
@@ -110,10 +95,9 @@
             didn't have a PC then😔 but anytime i had access to a PC, I do try
             to edit random website code - through <span>'Inspect code'</span> in
             browser. I later started reading about HTML & CSS on
-            <span>W3Schools</span>.
+            <span>W3Schools</span>. It's been fun all the way.🚀
             <br />
             <br />
-            It's been fun all the way.🚀
           </summary>
 
           <div class="picture">
@@ -130,11 +114,9 @@
 
       <section class="skills">
         <header>Skills &nbsp;</header>
-        <p>Here are a few technologies I’ve been working with recently:</p>
-
+        <p>Here are few technologies I’ve been working with recently:</p>
         <ul>
           <li>JavaScript</li>
-          <li>TypeScript</li>
           <li>NodeJS</li>
           <li>ReactJS</li>
           <li>MongoDB</li>
@@ -207,6 +189,11 @@
                 ></path></svg
             ></a>
           </li>
+
+          <li><a href="mailto:onadan45@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;"><path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"></path></svg>
+          </a></li>
+
         </ul>
         <br />
         <p style="text-align: center">
