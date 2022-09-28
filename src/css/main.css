@@ -33,6 +33,10 @@
   list-style-type: none;
 }
 
+html {
+scroll: smooth-behaviour;
+}
+
 a {
   color: inherit;
 }
